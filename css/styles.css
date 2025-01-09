@@ -250,6 +250,14 @@ footer ul li {
   display: inline-block;
   margin-left: 5px;
 }
+.login_footer {
+  background-color: #2e4c6d;
+  height: 18vh;
+  padding: 30px;
+  margin-top: 30px;
+  position: relative;
+  bottom: -400px;
+}
 #social-links {
   text-align: right;
 }
