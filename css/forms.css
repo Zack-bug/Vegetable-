@@ -35,8 +35,8 @@
 .signup-form input:not([type="checkbox"]):focus,
 .signup-form select:focus {
   outline: none;
-  background-color: yellowgreen;
-  border: 1px solid greenyellow;
+  background-color: #fff;
+  border: 1px solid black;
 }
 .signup-form input[type="checkbox"] {
   appearance: none;
