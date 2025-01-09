@@ -169,13 +169,13 @@ main {
 }
 
 #backtotop i {
-  color: #2e4c6d;
+  color: #fc997c;
   font-size: 45px;
   transition: color 0.6s;
 }
 
 #backtotop i:hover {
-  color: #2e4c6d;
+  color: black;
 }
 
 .counter {
@@ -234,7 +234,7 @@ footer {
   padding: 30px;
   margin-top: 30px;
   position: relative;
-  bottom: -200px;
+  bottom: -250px;
 }
 footer a {
   font-size: 18px;
@@ -249,6 +249,14 @@ footer ul li {
   list-style-type: none;
   display: inline-block;
   margin-left: 5px;
+}
+.login_footer {
+  background-color: #2e4c6d;
+  height: 18vh;
+  padding: 30px;
+  margin-top: 30px;
+  position: relative;
+  bottom: -400px;
 }
 #social-links {
   text-align: right;

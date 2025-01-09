@@ -71,8 +71,7 @@ body {
   border-radius: 8px;
   border: 2px solid #fff;
 }
-
-.main-nav__item--login a:hover {
+.main-nav__item-- .main-nav__item--login a:hover {
   color: #2e4c6d;
   border: 2px solid #2e4c6d;
   background-color: #fff;

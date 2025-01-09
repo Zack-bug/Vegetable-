@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+  </head>
+  <body id="body">
+    <header class="main-header">
+      <div class="container">
+        <a href="#" class="main-header__logo">Vegetable</a>
+        <nav class="main-nav"></nav>
+      </div>
+    </header>
+    <main class="signup-page">
+      <h1 class="signup-title">Crate Your Account</h1>
+      <form action="" class="signup-form">
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" />
+        <label for="lastname">Last name </label>
+        <input type="text" id="lastname" />
+        <label for="email">Email</label>
+        <input type="email" id="email" />
+        <label for="password">Password </label>
+        <input type="password" id="password" />
+
+        <label for="gender">Usage type</label>
+        <select id="gender">
+          <option value="">Select</option>
+          <option value="">Seller</option>
+          <option value="">Buyer</option>
+        </select>
+        <input type="checkbox" id="agree-terms" />
+        <label for="agree-terms"
+          >Agree to
+          <a href="#">Terms &amp;Contitions</a>
+        </label>
+        <button type="submit" class="btn btn-primary">Sign up</button>
+      </form>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row footer-row">
+          <div class="col-2">
+            <ul id="footer-links">
+              <li class="footer-link"><a href="#">About</a></li>
+              <li class="footer-link"><a href="#">Blog</a></li>
+              <li class="footer-link"><a href="#">Forum</a></li>
+              <li class="footer-link"><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <ul id="social-links">
+              <li><a href="#" class="fab fa-facebook"></a></li>
+              <li><a href="#" class="fab fa-twitter"></a></li>
+              <li><a href="#" class="fab fa-instagram"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#body" id="backtotop">
+      <i class="fas fa-chevron-circle-up"></i>
+    </a>
+  </body>
+</html>
