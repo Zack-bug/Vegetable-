@@ -360,3 +360,7 @@ html {
     display: block;
   }
 }
+.images {
+  height: 300px;
+  width: 100%;
+}
