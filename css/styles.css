@@ -40,7 +40,7 @@ main {
   position: absolute;
   top: 50%;
   margin: 0;
-  color: #fff;
+  color: black;
   left: 50%;
   transform: translate(-50%, -50%);
 }
