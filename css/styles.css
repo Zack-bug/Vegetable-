@@ -6,10 +6,6 @@
 html {
   scroll-behavior: smooth;
 }
-main {
-  margin-top: 50px;
-}
-
 #showcase {
   background: linear-gradient(
       to bottom,
@@ -92,7 +88,7 @@ main {
 }
 
 .main-header {
-  position: fixed;
+  position: relative;
   z-index: 1;
   width: 100%;
   top: 0;
