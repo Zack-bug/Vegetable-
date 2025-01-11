@@ -449,6 +449,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 4px;
   width: 100%; /* Arama kutusunun genişliği */
+  margin-left: 10px;
 }
 
 .search-button {

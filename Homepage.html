@@ -22,13 +22,12 @@
   <body>
     <header class="main-header main__header_homepage">
       <a href="Homepage.html" class="main-header__logo">Vegetable</a>
-      <form class="search-form" action="#" method="get">
-        <input type="text" class="search-input" placeholder="Search for products..." />
+      <form class="search-form" id="searchForm" onsubmit="return false;">
+        <input type="text" id="searchInput" class="search-input" placeholder="Search for products..." oninput="filterProducts()" />
         <button type="submit" class="search-button">
-          <i class="fas fa-search"></i> <!-- Font Awesome Arama Ikonu -->
+          <i class="fas fa-search"></i> <!-- Font Awesome Arama İkonu -->
         </button>
       </form>
-    
       <nav class="main-nav">
         <ul class="main-nav__items">
           <li class="main-nav__item">
