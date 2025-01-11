@@ -316,7 +316,7 @@ html {
 .about-section {
   padding: 50px;
   text-align: center;
-  background-color: #474e5d;
+  background-color: #222;
   color: white;
 }
 
@@ -345,7 +345,7 @@ html {
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color: #000;
+  background-color: #222;
   text-align: center;
   cursor: pointer;
   width: 27em;
