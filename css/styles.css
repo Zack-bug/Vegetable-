@@ -422,3 +422,6 @@ body {
   display: block;
   margin-top: 15px;
 }
+.main__header_homepage {
+  position: fixed;
+}
