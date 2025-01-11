@@ -425,3 +425,47 @@ body {
 .main__header_homepage {
   position: fixed;
 }
+/* Navbar ve genel düzen */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333; /* Navbar arka plan rengi */
+}
+
+/* Arama Formu ve Butonu */
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Arama çubuğunu sağa hizalar */
+  margin-right: auto; /* Ortalamak için */
+  width: 50%; /* Arama çubuğunun genişliği */
+}
+
+.search-input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Arama kutusunun genişliği */
+  margin-left: 10px;
+}
+
+.search-button {
+  background-color: #4caf50; /* Arama butonunun rengi */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 8px; /* Buton ile arama kutusu arasına boşluk ekler */
+}
+
+.search-button i {
+  font-size: 18px; /* Arama ikonunun boyutunu ayarlamak için */
+}
+
+.search-button:hover {
+  background-color: #45a049; /* Buton hover efekti */
+}
