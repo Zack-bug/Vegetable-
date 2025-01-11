@@ -11,15 +11,15 @@
 }
 
 .btn-primary {
-  background: #fc997c;
+  background: #222;
   color: #fff;
-  border: 2px solid #fc997c;
+  border: 2px solid #222;
 }
 
 .btn-primary:hover {
   background: #fff;
-  color: #fc997c;
-  border: 2px solid #fc997c;
+  color: #222;
+  border: 2px solid #222;
 }
 
 .btn-outline-primary {
