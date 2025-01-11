@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="css/styles.css" />
 <link rel="stylesheet" href="css/main.css" />
+<script src="javascript/Cart.js"></script>
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
@@ -38,84 +39,103 @@
         <div class="card">
           <img
             class="images"
-            src="https://www.medicalpark.com.tr/_uploads/_images/_healthGuide/8s54zxhM.jpg"
-            alt="Soğan"
+            src="https://turgutozalilkokulu13.meb.k12.tr/meb_iys_dosyalar/13/04/976637/resimler/2018_02/k_11200804_apples-on-branch.jpg"
+            alt="Apple"
           />
           <div class="container">
-            <h2>Jane Doe</h2>
-            <p class="title">CEO & Founder</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>jane@example.com</p>
-            <p><button class="home">Contact</button></p>
+            <h2>Sevgi Güler</h2>
+            <p class="title">sevgiguler@elmabahcesi.com</p>
+            <p class="describe">
+              “Crisp, sweet, and juicy, our apples are perfect for snacking and baking!”
+            </p>
+            <p>Elma Bahçesi & Isparta</p>
+            <button onclick="addToCart('Apple', 58)" class="home">
+              <span> Add to the Cart</span>
           </div>
         </div>
       </div>
+
       <div class="column">
         <div class="card">
           <img
             class="images"
-            src="https://ideacdn.net/shop/ir/87/myassets/products/838/domates-tohumu-money-maker-1.jpg?revision=1718894808"
-            alt="Jane"
+            src="https://static.ticimax.cloud/cdn-cgi/image/width=-,quality=85/65420/uploads/urunresimleri/buyuk/mandalina-1-kilo-40fc-8.png"
+            alt="Orange"
           />
           <div class="container">
-            <h2>Jane Doe</h2>
-            <p class="title">CEO & Founder</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>jane@example.com</p>
-            <p><button class="home">Contact</button></p>
+            <h2>Hakan Türkmen</h2>
+            <p class="title">hakanturkmen@turunctarim.com</p>
+            <p class="describe">
+              “Bursting with tangy sweetness, our oranges are a refreshing vitamin boost!”
+            </p>
+            <p>Turunç Tarım & Mersin</p>
+            <button onclick="addToCart('Orange', 39)" class="home">
+              <span>Add to the Cart</span>
           </div>
         </div>
       </div>
+
+       <div class="column">
+          <div class="card">
+            <img
+              class="images"
+              src="https://cdn-img.pttavm.com/pimages/592/055/474/5bc98f816eb26.jpeg?v=201910111530"
+              alt="Potato"
+            />
+            <div class="container">
+              <h2>Kemal Ersoy</h2>
+              <p class="title">kemalersoy@altintoprak.com</p>
+              <p class="describe">
+                “Our potatoes are the secret to golden, fluffy fries and creamy mashed delights!”
+              </p>
+              <p>Altın Toprak Tarım & Niğde</p>
+              <button onclick="addToCart('Potato', 12)" class="home">
+                <span> Add to the Cart </span>
+            </div>
+          </div>
+        </div>
+
       <div class="column">
-        <div class="card">
-          <img
-            class="images"
-            src="https://static.ticimax.cloud/48857/uploads/urunresimleri/buyuk/-1008937--2684bf.jpg"
-            alt="patlican"
-          />
-          <div class="container">
-            <h2>Jane Doe</h2>
-            <p class="title">CEO & Founder</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>jane@example.com</p>
-            <p><button class="home">Contact</button></p>
+          <div class="card">
+            <img
+              class="images"
+              src="https://ideacdn.net/idea/ha/92/myassets/products/251/enterdonat-limon-fidani.png?revision=1725878317"
+              alt="Lemon"
+            />
+            <div class="container">
+              <h2>Yusuf Ali Yanık</h2>
+              <p class="title">yusufaliyanik@akdenizlimon.com</p>
+              <p class="describe">
+                “Juicy and zesty, our lemons bring a burst of sunshine to every dish or drink!”
+              </p>
+              <p>Akdeniz Limon & Adana</p>
+              <button onclick="addToCart('Lemon', 43)" class="home">
+                <span> Add to the Cart</span>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="column">
-        <div class="card">
-          <img
-            class="images"
-            src="https://termodizayn.com/thumb.php?p=./img/uploads/muhafazakosullari/icerik/17-biber1.jpg&h=434"
-            alt="Biber"
-          />
-          <div class="container">
-            <h2>Jane Doe</h2>
-            <p class="title">CEO & Founder</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>jane@example.com</p>
-            <p><button class="home">Contact</button></p>
-          </div>
-        </div>
-      </div>
+
     </section>
     <section>
       <div class="column">
-        <div class="card">
-          <img
-            class="images"
-            src="https://www.medicalpark.com.tr/_uploads/_images/_healthGuide/8s54zxhM.jpg"
-            alt="Soğan"
-          />
-          <div class="container">
-            <h2>Jane Doe</h2>
-            <p class="title">CEO & Founder</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>jane@example.com</p>
-            <p><button class="home">Contact</button></p>
+          <div class="card">
+            <img
+              class="images"
+              src="https://ideacdn.net/shop/ir/87/myassets/products/206/uzun-salatalik-tohumu-suyo-long-1.jpg?revision=1727701349"
+              alt="Cucumber"
+            />
+            <div class="container">
+              <h2>Esra Demir</h2>
+              <p class="title">esrademir@serinbahce.com</p>
+              <p class="describe">
+                “Crisp and refreshing, our cucumbers are the ultimate summer snack!”
+              </p>
+              <p>Serinbahçe Ürünleri & Bursa</p>
+              <button onclick="addToCart('Cucumber', 74)" class="home">
+              <span> Add to the Cart</span>
+            </div>
           </div>
         </div>
-      </div>
       <div class="column">
         <div class="card">
           <img
@@ -136,34 +156,22 @@
         <div class="card">
           <img
             class="images"
-            src="https://static.ticimax.cloud/48857/uploads/urunresimleri/buyuk/-1008937--2684bf.jpg"
-            alt="patlican"
+            src="https://www.agrowy.com/_next/image?url=https%3A%2F%2Fapi.agrowy.com%2Fassets%2F6c94e970-d7f3-46f2-a936-b763f0e14976&w=3840&q=75"
+            alt="Corn"
           />
           <div class="container">
-            <h2>Jane Doe</h2>
-            <p class="title">CEO & Founder</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>jane@example.com</p>
-            <p><button class="home">Contact</button></p>
+            <h2>Ahmet Yücel</h2>
+            <p class="title">ahmetyucel@bereketmisir.com</p>
+            <p class="describe">
+              “Golden and sweet, our corn is nature’s candy, perfect for roasting or boiling!”
+            </p>
+            <p>Bereket Mısır Ürünleri & Edirne </p>
+            <button onclick="addToCart('Corn', 44)" class="home">
+              <span> Add to the Cart</span>
           </div>
         </div>
       </div>
-      <div class="column">
-        <div class="card">
-          <img
-            class="images"
-            src="https://termodizayn.com/thumb.php?p=./img/uploads/muhafazakosullari/icerik/17-biber1.jpg&h=434"
-            alt="Biber"
-          />
-          <div class="container">
-            <h2>Jane Doe</h2>
-            <p class="title">CEO & Founder</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>jane@example.com</p>
-            <p><button class="home">Contact</button></p>
-          </div>
-        </div>
-      </div>
+     
     </section>
     <footer class="footer_home">
       <div class="footer_home-container">
