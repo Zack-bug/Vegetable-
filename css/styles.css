@@ -469,3 +469,56 @@ body {
 .search-button:hover {
   background-color: #45a049; /* Buton hover efekti */
 }
+#cartItems {
+  text-align: center;
+  list-style-type: none;
+}
+#Sepetim {
+  text-align: center;
+}
+#Tutar {
+  text-align: center;
+}
+#buyButton {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+#confirmationMessage {
+  text-align: center;
+}
+#cartItems {
+  padding-right: 40px;
+}
+.sepet_section {
+  width: 40%;
+  margin: auto;
+}
+#cartItems li {
+  margin-top: 5px;
+  font-weight: bold;
+}
+#totalPrice {
+  font-weight: bold;
+}
+#cartItems li button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
