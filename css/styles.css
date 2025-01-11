@@ -522,3 +522,83 @@ body {
   cursor: pointer;
   font-size: 16px;
 }
+/* Genel Sıfırlama (Reset) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Gövde (Body) Ayarları */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+}
+
+/* Başlık ve Paragraf Boşlukları */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* Resim Ayarları */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Genel Bölüm (Section) Ayarları */
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Flexbox Yapısı */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Elementler arasındaki boşluk */
+  justify-content: center;
+}
+
+/* Kart (Column) Ayarları */
+.card {
+  flex: 1 1 calc(33.33% - 20px); /* Kart genişliği */
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Başlık ve Görsel Arası Boşluk */
+.card img {
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Başlık Ayarları */
+.card h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+/* Tarayıcı Uyumluluğu için HTML ve Body Ayarları */
+html,
+body {
+  height: 100%;
+}
