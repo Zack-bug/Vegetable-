@@ -334,6 +334,11 @@ html {
   color: grey;
 }
 
+
+.describe{
+  width: 295px;
+}
+
 .home {
   border: none;
   outline: 0;
@@ -343,7 +348,7 @@ html {
   background-color: #000;
   text-align: center;
   cursor: pointer;
-  width: 415px;
+  width: 27em;
 }
 
 .button:hover {
