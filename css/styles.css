@@ -413,3 +413,7 @@ body {
 .footer_home-bottom {
   font-size: 12px;
 }
+.signup__button {
+  display: block;
+  margin-top: 15px;
+}
