@@ -19,40 +19,72 @@
     </header>
     <main class="signup-page">
       <h1 class="signup-title">Crate Your Account</h1>
-      <form action="" class="signup-form">
+      <form action="" class="signup-form" id="signup-form">
         <label for="firstname">First Name</label>
         <input type="text" id="firstname" />
-        <label for="lastname">Last name </label>
+
+        <label for="lastname">Last Name</label>
         <input type="text" id="lastname" />
+
         <label for="email">Email</label>
         <input type="email" id="email" />
-        <label for="password">Password </label>
+
+        <label for="password">Password</label>
         <input type="password" id="password" />
-        <label for="Phone_number">Phone number </label>
+
+        <label for="Phone_number">Phone Number</label>
         <input type="tel" id="Phone_number" maxlength="10" minlength="9" />
-        <label for="gender">Usage type</label>
+
+        <label for="gender">Usage Type</label>
         <select id="gender">
           <option value="">Select</option>
-          <option value="">Seller</option>
-          <option value="">Buyer</option>
+          <option value="seller">Seller</option>
+          <option value="buyer">Buyer</option>
         </select>
+
         <input type="checkbox" id="agree-terms" />
         <label for="agree-terms"
-          >Agree to
-          <a href="#">Terms &amp;Contitions</a>
-        </label>
-        <button
-          type="button"
-          class="btn btn-primary signup__button"
-          onclick="goToHomepage()"
+          >Agree to <a href="#">Terms &amp; Conditions</a></label
         >
-          Sign up
+
+        <button type="submit" class="btn btn-primary signup__button">
+          Sign Up
         </button>
 
         <script>
-          function goToHomepage() {
-            window.location.href = "Homepage.html"; // Replace with your actual homepage URL
-          }
+          document
+            .getElementById("signup-form")
+            .addEventListener("submit", function (event) {
+              event.preventDefault(); // Formun varsayılan gönderilmesini engelle
+
+              // Alanları alalım
+              var firstname = document.getElementById("firstname").value;
+              var lastname = document.getElementById("lastname").value;
+              var email = document.getElementById("email").value;
+              var password = document.getElementById("password").value;
+              var phoneNumber = document.getElementById("Phone_number").value;
+              var gender = document.getElementById("gender").value;
+              var agreeTerms = document.getElementById("agree-terms").checked;
+
+              // Kontrolleri yapalım
+              if (
+                !firstname ||
+                !lastname ||
+                !email ||
+                !password ||
+                !phoneNumber ||
+                !gender ||
+                !agreeTerms
+              ) {
+                alert(
+                  "Please fill in all fields and agree to the terms and conditions."
+                );
+                return; // Formu göndermemek için
+              }
+
+              // Eğer tüm kontroller geçerse, sayfaya yönlendirelim
+              window.location.href = "Homepage.html"; // Kendi homepage URL'nizi buraya koyun
+            });
         </script>
       </form>
     </main>
