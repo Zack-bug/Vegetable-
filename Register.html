@@ -41,7 +41,15 @@
           >Agree to
           <a href="#">Terms &amp;Contitions</a>
         </label>
-        <button type="submit" class="btn btn-primary">Sign up</button>
+        <button type="button" class="btn btn-primary" onclick="goToHomepage()">
+          Sign up
+        </button>
+
+        <script>
+          function goToHomepage() {
+            window.location.href = "Homepage.html"; // Replace with your actual homepage URL
+          }
+        </script>
       </form>
     </main>
 
