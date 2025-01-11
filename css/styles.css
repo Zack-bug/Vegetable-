@@ -66,7 +66,7 @@ html {
 }
 
 .main-header {
-  background-color: #fc997c;
+  background-color: #222;
   padding: 8px 16px;
 }
 
@@ -119,6 +119,7 @@ html {
 .main-nav__item::before {
   content: "\2022";
   color: #fff;
+  visibility: hidden;
 }
 
 .main-nav__item--login::before {
@@ -315,7 +316,7 @@ html {
 .about-section {
   padding: 50px;
   text-align: center;
-  background-color: #474e5d;
+  background-color: #222;
   color: white;
 }
 
@@ -334,8 +335,7 @@ html {
   color: grey;
 }
 
-
-.describe{
+.describe {
   width: 295px;
 }
 
@@ -345,10 +345,11 @@ html {
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color: #000;
+  background-color: #222;
   text-align: center;
   cursor: pointer;
   width: 27em;
+  margin-bottom: 10px;
 }
 
 .button:hover {
@@ -412,4 +413,15 @@ body {
 
 .footer_home-bottom {
   font-size: 12px;
+}
+.signup__button {
+  display: block;
+  margin-top: 15px;
+}
+.login__button {
+  display: block;
+  margin-top: 15px;
+}
+.main__header_homepage {
+  position: fixed;
 }

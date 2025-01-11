@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="css/styles.css" />
 <link rel="stylesheet" href="css/main.css" />
+<script src="javascript/Cart.js"></script>
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
@@ -19,10 +20,13 @@
     />
   </head>
   <body>
-    <header class="main-header">
-      <a href="#" class="main-header__logo">Vegetable</a>
+    <header class="main-header main__header_homepage">
+      <a href="Homepage.html" class="main-header__logo">Vegetable</a>
       <nav class="main-nav">
         <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a href="Cart.html">Cart</a>
+          </li>
           <li class="main-nav__item">
             <a href="profile.html">Profile</a>
           </li>
@@ -32,7 +36,7 @@
           <li class="main-nav__item">
             <a href="Register.html">Sign up</a>
           </li>
-          <li class="main-nav__item main-nav__item--login">
+          <li class="main-nav__item">
             <a href="login.html">Login</a>
           </li>
         </ul>
@@ -59,9 +63,14 @@
             <div class="container">
               <h2>Jane Doe</h2>
               <p class="title">CEO & Founder</p>
-              <p class="describe">Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p class="describe">
+                Some text that describes me lorem ipsum ipsum lorem.
+              </p>
               <p>jane@example.com</p>
-              <p><button class="home">Contact</button></p>
+
+              <button onclick="addToCart('Domates', 30)" class="home">
+                <span> Sepete Ekle</span>
+              </button>
             </div>
           </div>
         </div>
@@ -76,9 +85,12 @@
             <div class="container">
               <h2>Jane Doe</h2>
               <p class="title">CEO & Founder</p>
-              <p class="describe">Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p class="describe">
+                Some text that describes me lorem ipsum ipsum lorem.
+              </p>
               <p>jane@example.com</p>
-              <p><button class="home">Contact</button></p>
+              <button onclick="addToCart('Salatalık', 25)" class="home">
+              <span> Sepete Ekle</span>
             </div>
           </div>
         </div>
@@ -93,9 +105,12 @@
             <div class="container">
               <h2>Jane Doe</h2>
               <p class="title">CEO & Founder</p>
-              <p class="describe">Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p class="describe">
+                Some text that describes me lorem ipsum ipsum lorem.
+              </p>
               <p>jane@example.com</p>
-              <p><button class="home">Contact</button></p>
+              <button onclick="addToCart('Domates', 30)" class="home">
+                <span> Sepete Ekle</span>
             </div>
           </div>
         </div>
@@ -110,9 +125,12 @@
             <div class="container">
               <h2>Jane Doe</h2>
               <p class="title">CEO & Founder</p>
-              <p class="describe">Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p class="describe">
+                Some text that describes me lorem ipsum ipsum lorem.
+              </p>
               <p>jane@example.com</p>
-              <p><button class="home">Contact</button></p>
+              <button onclick="addToCart('Domates', 30)" class="home">
+                <span> Sepete Ekle</span>
             </div>
           </div>
         </div>
@@ -127,9 +145,12 @@
             <div class="container">
               <h2>Jane Doe</h2>
               <p class="title">CEO & Founder</p>
-              <p class="describe">Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p class="describe">
+                Some text that describes me lorem ipsum ipsum lorem.
+              </p>
               <p>jane@example.com</p>
-              <p><button class="home">Contact</button></p>
+              <button onclick="addToCart('Domates', 30)" class="home">
+                <span> Sepete Ekle</span>
             </div>
           </div>
         </div>
@@ -144,9 +165,12 @@
             <div class="container">
               <h2>Jane Doe</h2>
               <p class="title">CEO & Founder</p>
-              <p class="describe">Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p class="describe">
+                Some text that describes me lorem ipsum ipsum lorem.
+              </p>
               <p>jane@example.com</p>
-              <p><button class="home">Contact</button></p>
+              <button onclick="addToCart('Domates', 30)" class="home">
+                <span> Sepete Ekle</span>
             </div>
           </div>
         </div>
@@ -161,9 +185,12 @@
             <div class="container">
               <h2>Jane Doe</h2>
               <p class="title">CEO & Founder</p>
-              <p class="describe">Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p class="describe">
+                Some text that describes me lorem ipsum ipsum lorem.
+              </p>
               <p>jane@example.com</p>
-              <p><button class="home">Contact</button></p>
+              <button onclick="addToCart('Domates', 30)" class="home">
+                <span> Sepete Ekle</span>
             </div>
           </div>
         </div>
@@ -178,9 +205,12 @@
             <div class="container">
               <h2>Jane Doe</h2>
               <p class="title">CEO & Founder</p>
-              <p class="describe">Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p class="describe">
+                Some text that describes me lorem ipsum ipsum lorem.
+              </p>
               <p>jane@example.com</p>
-              <p><button class="home">Contact</button></p>
+              <button onclick="addToCart('Domates', 30)" class="home">
+                <span> Sepete Ekle</span>
             </div>
           </div>
         </div>
@@ -195,9 +225,12 @@
             <div class="container">
               <h2>Jane Doe</h2>
               <p class="title">CEO & Founder</p>
-              <p class="describe">Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p class="describe">
+                Some text that describes me lorem ipsum ipsum lorem.
+              </p>
               <p>jane@example.com</p>
-              <p><button class="home">Contact</button></p>
+              <button onclick="addToCart('Domates', 30)" class="home">
+                <span> Sepete Ekle</span>
             </div>
           </div>
         </div>
@@ -212,9 +245,12 @@
             <div class="container">
               <h2>Jane Doe</h2>
               <p class="title">CEO & Founder</p>
-              <p class="describe">Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p class="describe">
+                Some text that describes me lorem ipsum ipsum lorem.
+              </p>
               <p>jane@example.com</p>
-              <p><button class="home">Contact</button></p>
+              <button onclick="addToCart('Domates', 30)" class="home">
+                <span> Sepete Ekle</span>
             </div>
           </div>
         </div>
@@ -229,9 +265,12 @@
             <div class="container">
               <h2>Jane Doe</h2>
               <p class="title">CEO & Founder</p>
-              <p class="describe">Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p class="describe">
+                Some text that describes me lorem ipsum ipsum lorem.
+              </p>
               <p>jane@example.com</p>
-              <p><button class="home">Contact</button></p>
+              <button onclick="addToCart('Domates', 30)" class="home">
+                <span> Sepete Ekle</span>
             </div>
           </div>
         </div>
@@ -246,9 +285,12 @@
             <div class="container">
               <h2>Jane Doe</h2>
               <p class="title">CEO & Founder</p>
-              <p class="describe"> Some text that describes me lorem ipsum ipsum lorem. </p>
+              <p class="describe">
+                Some text that describes me lorem ipsum ipsum lorem.
+              </p>
               <p>jane@example.com</p>
-              <p><button class="home">Contact</button></p>
+              <button onclick="addToCart('Domates', 30)" class="home">
+                <span> Sepete Ekle</span>
             </div>
           </div>
         </div>
@@ -263,9 +305,12 @@
             <div class="container">
               <h2>Jane Doe</h2>
               <p class="title">CEO & Founder</p>
-              <p class="describe">Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p class="describe">
+                Some text that describes me lorem ipsum ipsum lorem.
+              </p>
               <p>jane@example.com</p>
-              <p><button class="home">Contact</button></p>
+              <button onclick="addToCart('Domates', 30)" class="home">
+                <span> Sepete Ekle</span>
             </div>
           </div>
         </div>
@@ -280,9 +325,12 @@
             <div class="container">
               <h2>Jane Doe</h2>
               <p class="title">CEO & Founder</p>
-              <p class="describe">Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p class="describe">
+                Some text that describes me lorem ipsum ipsum lorem.
+              </p>
               <p>jane@example.com</p>
-              <p><button class="home">Contact</button></p>
+              <button onclick="addToCart('Domates', 30)" class="home">
+                <span> Sepete Ekle</span>
             </div>
           </div>
         </div>
@@ -297,9 +345,12 @@
             <div class="container">
               <h2>Jane Doe</h2>
               <p class="title">CEO & Founder</p>
-              <p class="describe">Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p class="describe">
+                Some text that describes me lorem ipsum ipsum lorem.
+              </p>
               <p>jane@example.com</p>
-              <p><button class="home">Contact</button></p>
+              <button onclick="addToCart('Domates', 30)" class="home">
+                <span> Sepete Ekle</span>
             </div>
           </div>
         </div>
@@ -316,11 +367,7 @@
         </div>
 
         <div class="footer_home-section">
-          <h4>Contact</h4>
-          <p>
-            Email: <a href="mailto:info@example.com">info@example.com</a><br />
-            Phone: <a href="tel:+1234567890">+1 234 567 890</a>
-          </p>
+          <a href="about.html">Contact/About</a>
         </div>
 
         <div class="footer_home-section">

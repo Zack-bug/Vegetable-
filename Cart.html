@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sepetim</title>
+  </head>
+  <body>
+    <h1>Sepetim</h1>
+    <ul id="cartItems"></ul>
+    <p><strong>Toplam Tutar:</strong> <span id="totalPrice">0</span> TL</p>
+    <button id="buyButton">Satın Al</button>
+    <p
+      id="confirmationMessage"
+      style="color: green; font-weight: bold; display: none"
+    >
+      Satın alma işleminiz tamamlanmıştır!
+    </p>
+    <a href="index.html">Ürünlere Geri Dön</a>
+
+    <script>
+      // Sepeti yerel depolamadan al
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      const cartItems = document.getElementById("cartItems");
+      const totalPriceElement = document.getElementById("totalPrice");
+      const confirmationMessage = document.getElementById(
+        "confirmationMessage"
+      );
+      let totalPrice = 0;
+
+      // Sepet içeriğini listele
+      function renderCart() {
+        cartItems.innerHTML = ""; // Önce listeyi temizle
+        totalPrice = 0;
+
+        if (cart.length === 0) {
+          cartItems.innerHTML = "<li>Sepetiniz boş.</li>";
+          totalPriceElement.textContent = 0;
+          return;
+        }
+
+        cart.forEach((item, index) => {
+          const li = document.createElement("li");
+          li.innerHTML = `
+                    ${item.name} - ${item.price} TL
+                    <button onclick="removeFromCart(${index})">Kaldır</button>
+                `;
+          cartItems.appendChild(li);
+          totalPrice += item.price;
+        });
+
+        totalPriceElement.textContent = totalPrice;
+      }
+
+      // Ürün kaldırma işlemi
+      function removeFromCart(index) {
+        cart.splice(index, 1); // İlgili indeksteki ürünü kaldır
+        localStorage.setItem("cart", JSON.stringify(cart)); // Sepeti güncelle
+        renderCart(); // Listeyi yeniden oluştur
+      }
+
+      // Satın alma işlemi
+      function buyAll() {
+        if (cart.length === 0) {
+          alert("Sepetinizde ürün bulunmamaktadır.");
+          return;
+        }
+
+        // Sepeti temizle
+        cart = [];
+        localStorage.removeItem("cart"); // Sepeti yerel depolamadan kaldır
+
+        // Onay mesajı göster
+        confirmationMessage.style.display = "block";
+
+        // Sepeti ekrandan temizle
+        renderCart();
+      }
+
+      // Sayfa yüklendiğinde sepeti göster
+      renderCart();
+
+      // "Satın Al" butonuna tıklama olayını dinle
+      document.getElementById("buyButton").addEventListener("click", buyAll);
+    </script>
+  </body>
+</html>
