@@ -67,7 +67,7 @@ html {
 }
 
 .main-header {
-  background-color: #222;
+  background-color: #3cce7def;
   padding: 8px 16px;
 }
 
@@ -317,7 +317,7 @@ html {
 .about-section {
   padding: 50px;
   text-align: center;
-  background-color: #222;
+  background-color: #3cce7def;
   color: white;
 }
 
@@ -346,7 +346,7 @@ html {
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color: #222;
+  background-color: #3cce7def;
   text-align: center;
   cursor: pointer;
   width: 27em;
@@ -379,7 +379,7 @@ body {
 }
 
 .footer_home {
-  background-color: #222;
+  background-color: #3cce7def;
   color: #fff;
   padding: 20px 0;
   text-align: center;
@@ -484,7 +484,7 @@ body {
   display: block;
   margin: 20px auto;
   padding: 10px 20px;
-  background-color: #222;
+  background-color: #3cce7def;
   color: white;
   border: none;
   border-radius: 5px;
@@ -516,7 +516,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
 
-  background-color: #222;
+  background-color: #3cce7def;
   color: white;
   border: none;
   border-radius: 5px;

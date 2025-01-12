@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/profile.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script src="javascript/Cart.js"></script>
+<html>
+  <head>
+    <title>Title of the document</title>
+  </head>
+  <body>
+    <header class="main-header main__header_homepage">
+      <a href="Homepage.html" class="main-header__logo">Vegetable</a>
+      <form class="search-form" id="searchForm" onsubmit="return false;">
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="Search for products..."
+          oninput="filterProducts()"
+        />
+        <button type="submit" class="search-button">
+          <i class="fas fa-search"></i>
+          <!-- Font Awesome Arama İkonu -->
+        </button>
+      </form>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a href="Cart.html">Cart</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="profile.html">Profile</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="Favorites.html">Favorites</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="Register.html">Sign up</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="login.html">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <h1>Your Sales</h1>
+        <p class="profile"><strong>Name:</strong> Mehmet Yılmaz</p>
+        <p><strong>Email:</strong> mehmetyilmaz@egetohumculuk.com</p>
+
+        <h2>Products Sold:</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Your Products</th>
+              <th>Quantity Sold</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tomato</td>
+              <td>132</td>
+            </tr>
+            <tr>
+              <td>Onion</td>
+              <td>106</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer class="footer_home">
+      <div class="footer_home-container">
+        <div class="footer_home-section">
+          <h4>About Us</h4>
+          <p>
+            We are dedicated to providing the best services and products to our
+            customers. Learn more about us and our mission.
+          </p>
+        </div>
+
+        <div class="footer_home-section">
+          <a href="about.html">Contact/About</a>
+        </div>
+
+        <div class="footer_home-section">
+          <h4>Follow Us</h4>
+          <a href="https://facebook.com" target="_blank">Facebook</a>
+          <a href="https://twitter.com" target="_blank">Twitter</a>
+          <a href="https://instagram.com" target="_blank">Instagram</a>
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+
+        <div class="footer_home-bottom">
+          <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
