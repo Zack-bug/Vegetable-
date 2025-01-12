@@ -22,7 +22,7 @@
       </nav>
     </header>
     <main class="signup-page">
-      <h1 class="signup-title">Crate Your Account</h1>
+      <h1 class="signup-title">Create Your Account</h1>
       <form action="" class="signup-form" id="signup-form">
         <label for="firstname">First Name</label>
         <input type="text" id="firstname" />
@@ -54,42 +54,6 @@
         <button type="submit" class="btn btn-primary signup__button">
           Sign Up
         </button>
-
-        <script>
-          document
-            .getElementById("signup-form")
-            .addEventListener("submit", function (event) {
-              event.preventDefault(); // Formun varsayılan gönderilmesini engelle
-
-              // Alanları alalım
-              var firstname = document.getElementById("firstname").value;
-              var lastname = document.getElementById("lastname").value;
-              var email = document.getElementById("email").value;
-              var password = document.getElementById("password").value;
-              var phoneNumber = document.getElementById("Phone_number").value;
-              var gender = document.getElementById("gender").value;
-              var agreeTerms = document.getElementById("agree-terms").checked;
-
-              // Kontrolleri yapalım
-              if (
-                !firstname ||
-                !lastname ||
-                !email ||
-                !password ||
-                !phoneNumber ||
-                !gender ||
-                !agreeTerms
-              ) {
-                alert(
-                  "Please fill in all fields and agree to the terms and conditions."
-                );
-                return; // Formu göndermemek için
-              }
-
-              // Eğer tüm kontroller geçerse, sayfaya yönlendirelim
-              window.location.href = "Homepage.html"; // Kendi homepage URL'nizi buraya koyun
-            });
-        </script>
       </form>
     </main>
 
@@ -125,5 +89,8 @@
     <a href="#body" id="backtotop">
       <i class="fas fa-chevron-circle-up"></i>
     </a>
+
+    <!-- Dış JavaScript dosyasını dahil etme -->
+    <script src="js/signup.js"></script>
   </body>
 </html>
