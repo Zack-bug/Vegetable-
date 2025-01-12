@@ -41,36 +41,6 @@
         </button>
       </form>
 
-      <script>
-        // Formu seçelim
-        document
-          .getElementById("signup-form")
-          .addEventListener("submit", function (event) {
-            // Formun varsayılan gönderilmesini engelleyelim
-            event.preventDefault();
-
-            // Alanları alalım
-            var email = document.getElementById("email").value;
-            var password = document.getElementById("password").value;
-            var agreeTerms = document.getElementById("agree-terms").checked;
-
-            // Kontrolleri yapalım
-            if (!email || !password) {
-              alert("Email and Password cannot be empty!");
-              return;
-            }
-
-            if (!agreeTerms) {
-              alert("You must agree to the terms and conditions!");
-              return;
-            }
-
-            // Eğer tüm kontroller geçerse, sayfaya yönlendirelim
-            window.location.href = "Homepage.html"; // Kendi homepage URL'nizi buraya koyun
-          });
-      </script>
-    </main>
-
     <footer class="footer_home">
       <div class="footer_home-container">
         <div class="footer_home-section">
