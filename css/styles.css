@@ -354,7 +354,7 @@ html {
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color: #3cce7def;
+  background-color: #222;
   text-align: center;
   cursor: pointer;
   width: 20em;
@@ -388,7 +388,7 @@ body {
 }
 
 .footer_home {
-  background-color: #3cce7def;
+  background-color: #222;
   color: #fff;
   padding: 20px 0;
   text-align: center;
@@ -463,7 +463,7 @@ body {
 }
 
 .search-button {
-  background-color: #4caf50; /* Arama butonunun rengi */
+  background-color: orange; /* Arama butonunun rengi */
   color: white;
   border: none;
   padding: 8px 12px;
@@ -477,7 +477,7 @@ body {
 }
 
 .search-button:hover {
-  background-color: #45a049; /* Buton hover efekti */
+  background-color: #2e4c6d; /* Buton hover efekti */
 }
 #cartItems {
   text-align: center;
