@@ -1,4 +1,3 @@
-// server.js
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
@@ -67,4 +66,9 @@ app.post("/api/register", (req, res) => {
 // Sunucuyu başlat
 app.listen(port, () => {
   console.log(`Sunucu http://localhost:${port} adresinde çalışıyor!`);
+});
+db.serialize(() => {
+  db.run(
+    "CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT, email TEXT, password TEXT)"
+  );
 });
