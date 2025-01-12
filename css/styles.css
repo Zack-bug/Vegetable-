@@ -200,7 +200,15 @@ html {
   position: relative;
   top: 0;
   transition: all 0.3s;
+  display: flex; /* Flexbox etkinleştir */
+  flex-direction: column; /* İçeriği dikey hizala */
+  justify-content: center; /* İçeriği dikeyde ortala */
+  align-items: center; /* İçeriği yatayda ortala */
+  text-align: center; /* Metinleri ortala */
+  padding: 20px; /* Kart içindeki boşluk */
+  height: 100%; /* Kartın sabit yükseklikte olması için */
 }
+
 .card:hover {
   top: -20px;
 }
