@@ -1,3 +1,19 @@
+<?php
+session_start();
+
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "vegetable_db";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} else
+echo("tamamdirsadasdasd");
+?>
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -31,7 +47,7 @@
         }
         ?>
 
-        <form action="php/login_process.php" method="POST" class="signup-form" id="signup-form">
+        <form action="/Vegetable/php/login_process.php" method="POST" class="signup-form" id="signup-form">
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required />
 

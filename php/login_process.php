@@ -5,7 +5,7 @@ session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "vegetable_db1";
+$dbname = "vegetable_db";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         
         $error_message = "Invalid email or password.";
-        header("Location: ../login.php?error=" . urlencode($error_message));
+        header("Location: login.php?error=" . urlencode($error_message));
         exit();
     }
 }
