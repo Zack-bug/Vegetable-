@@ -605,7 +605,33 @@ section {
   border-radius: 8px; /* Adjust the value for softer edges */
   overflow: hidden; /* Ensures the corners are clipped properly */
 }
+.banner {
+  position: relative;
+  text-align: center;
+  color: #F4A525;
+}
 
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: brightness(70%); /* Darkens the image for better text contrast */
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%; /* Centers vertically */
+  left: 50%; /* Centers horizontally */
+  transform: translate(-50%, -50%);
+  font-size: 3rem; /* Large, clear font size */
+  font-family: 'Arial', sans-serif;
+  color: white; /* Text color for contrast */
+  background-color: orange; /* Uniform orange background */
+  padding: 4px 15px; /* Adds space around the text for uniformity */
+  text-align: center; /* Ensures text alignment is centralized */
+  border-radius: 10px; /* Smooth, rounded edges for a uniform look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds subtle shadow for depth */
+}
 /* Başlık Ayarları */
 .card-content {
   display: flex;
@@ -624,6 +650,7 @@ section {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  
 }
 /* Tarayıcı Uyumluluğu için HTML ve Body Ayarları */
 html,
