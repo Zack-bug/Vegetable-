@@ -586,27 +586,45 @@ section {
 
 /* Kart (Column) Ayarları */
 .card {
-  flex: 1 1 calc(33.33% - 20px); /* Kart genişliği */
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 15px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Centers text inside */
+    border: 1px solid #ddd; /* Optional: card border */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: card shadow */
+    padding: 20px;
+    background: #fff; /* Optional: card background */
 }
 
 /* Başlık ve Görsel Arası Boşluk */
-.card img {
-  margin-bottom: 10px;
-  border-radius: 5px;
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Adjust the value for softer edges */
+  overflow: hidden; /* Ensures the corners are clipped properly */
 }
 
 /* Başlık Ayarları */
-.card h2 {
-  margin-bottom: 10px;
-  font-size: 1.5em;
+.card-content {
+  display: flex;
+  flex-direction: column; /* Ensures vertical stacking */
+  justify-content: center; /* Centers items vertically */
+  align-items: center; /* Centers items horizontally */
+  text-align: center; /* Centers text inside */
+  gap: 10px; /* Adds spacing between the lines */
 }
-
+.card button {
+  margin-top: 15px;
+  padding: 8px 15px; /* Adjust padding to make it smaller */
+  font-size: 0.9rem; /* Slightly smaller font size */
+  color: #fff;
+  background-color: #F4A525; /* Button color remains the same */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 /* Tarayıcı Uyumluluğu için HTML ve Body Ayarları */
 html,
 body {
