@@ -7,7 +7,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Favorites</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -21,17 +21,17 @@
   </head>
   <body>
     <header class="main-header">
-      <a href="#" class="main-header__logo">Vegetable</a>
+      <a href="Homepage.html" class="main-header__logo">Vegetable</a>
       <nav class="main-nav">
         <ul class="main-nav__items">
-          <li class="main-nav__item">
-            <a href="Homepage.html">Homepage</a>
-          </li>
           <li class="main-nav__item">
             <a href="Cart.html">Cart</a>
             <li class="main-nav__item">
             <a href="#">Profile</a>
           </li>
+          </li>
+          <li class="main-nav__item">
+            <a href="Homepage.html">Homepage</a>
           </li>
         </ul>
       </nav>
@@ -138,22 +138,27 @@
             </div>
           </div>
         </div>
-      <div class="column">
-        <div class="card">
-          <img
-            class="images"
-            src="https://ideacdn.net/shop/ir/87/myassets/products/838/domates-tohumu-money-maker-1.jpg?revision=1718894808"
-            alt="Jane"
-          />
-          <div class="container">
-            <h2>Jane Doe</h2>
-            <p class="title">CEO & Founder</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>jane@example.com</p>
-            <p><button class="home">Contact</button></p>
+        <div class="column">
+          <div class="card">
+            <img
+              class="images"
+              src="https://ideacdn.net/shop/ir/87/myassets/products/838/domates-tohumu-money-maker-1.jpg?revision=1718894808"
+              alt="Tomato"
+            />
+            <div class="container">
+              <h2>Mehmet Yılmaz </h2>
+              <p class="title">mehmetyilmaz@egetohumculuk.com</p>
+              <p class="describe">
+                "Our tomatoes are bursting with flavor, perfectly ripe for your salads and sauces!"
+              </p>
+              <p>Ege Tohumculuk & Antalya</p>
+
+              <button onclick="addToCart('Tomato', 54)" class="home">
+                <span> Add to the Cart</span>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
       <div class="column">
         <div class="card">
           <img
