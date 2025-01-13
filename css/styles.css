@@ -67,7 +67,7 @@ html {
 }
 
 .main-header {
-  background-color: #3cce7def;
+  background-color: #222;
   padding: 8px 16px;
 }
 
@@ -325,7 +325,7 @@ html {
 .about-section {
   padding: 50px;
   text-align: center;
-  background-color: #3cce7def;
+  background-color: #222;
   color: white;
 }
 
@@ -493,7 +493,7 @@ body {
   display: block;
   margin: 20px auto;
   padding: 10px 20px;
-  background-color: #3cce7def;
+  background-color: #222;
   color: white;
   border: none;
   border-radius: 5px;
@@ -525,7 +525,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
 
-  background-color: #3cce7def;
+  background-color: #222;
   color: white;
   border: none;
   border-radius: 5px;
