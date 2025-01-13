@@ -1,16 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="tr">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/forms.css" />
-  </head>
-  <body id="body">
+
+    
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/buttons.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body id="body">
     <header class="main-header">
       <a href="Homepage.html" class="main-header__logo">Vegetable</a>
       <nav class="main-nav">
@@ -23,23 +26,18 @@
     </header>
     <main class="signup-page">
       <h1 class="signup-title">Login Your Account</h1>
-      <form action="" class="signup-form" id="signup-form">
+      <form action="login_process.php" method="POST" class="signup-form" id="signup-form">
         <label for="email">Email</label>
-        <input type="email" id="email" />
+        <input type="email" id="email" name="email" required />
 
         <label for="password">Password</label>
-        <input type="password" id="password" />
-
-        <input type="checkbox" id="agree-terms" />
-        <label for="agree-terms">
-          Agree to
-          <a href="#">Terms &amp; Conditions</a>
-        </label>
+        <input type="password" id="password" name="password" required />
 
         <button type="submit" class="btn btn-primary login__button">
           Login
         </button>
       </form>
+    </main>
 
     <footer class="footer_home">
       <div class="footer_home-container">
