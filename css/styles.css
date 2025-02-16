@@ -67,7 +67,7 @@ html {
 }
 
 .main-header {
-  background-color: #3cce7def;
+  background-color: #222;
   padding: 8px 16px;
 }
 
@@ -156,7 +156,7 @@ html {
 .section-title {
   text-align: center;
   margin-bottom: 40px;
-  color: #3e4555;
+  color: #222;
   font-size: 30px;
 }
 
@@ -235,7 +235,7 @@ html {
   color: #ffff;
 }
 footer {
-  background-color: #2e4c6d;
+  background-color: #222;
   height: 18vh;
   padding: 30px;
   margin-top: 30px;
@@ -325,7 +325,7 @@ html {
 .about-section {
   padding: 50px;
   text-align: center;
-  background-color: #3cce7def;
+  background-color: #222;
   color: white;
 }
 
@@ -363,7 +363,7 @@ html {
 }
 
 .button:hover {
-  background-color: #555;
+  background-color: #222;
 }
 
 @media screen and (max-width: 650px) {
@@ -441,7 +441,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #333; /* Navbar arka plan rengi */
+  background-color: #222; /* Navbar arka plan rengi */
 }
 
 /* Arama Formu ve Butonu */
@@ -493,7 +493,7 @@ body {
   display: block;
   margin: 20px auto;
   padding: 10px 20px;
-  background-color: #3cce7def;
+  background-color: #F4A525;
   color: white;
   border: none;
   border-radius: 5px;
@@ -525,7 +525,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
 
-  background-color: #3cce7def;
+  background-color: #222;
   color: white;
   border: none;
   border-radius: 5px;
@@ -586,27 +586,72 @@ section {
 
 /* Kart (Column) Ayarları */
 .card {
-  flex: 1 1 calc(33.33% - 20px); /* Kart genişliği */
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 15px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Centers text inside */
+    border: 1px solid #ddd; /* Optional: card border */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: card shadow */
+    padding: 20px;
+    background: #fff; /* Optional: card background */
 }
 
 /* Başlık ve Görsel Arası Boşluk */
-.card img {
-  margin-bottom: 10px;
-  border-radius: 5px;
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Adjust the value for softer edges */
+  overflow: hidden; /* Ensures the corners are clipped properly */
+}
+.banner {
+  position: relative;
+  text-align: center;
+  color: #F4A525;
 }
 
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: brightness(70%); /* Darkens the image for better text contrast */
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%; /* Centers vertically */
+  left: 50%; /* Centers horizontally */
+  transform: translate(-50%, -50%);
+  font-size: 3rem; /* Large, clear font size */
+  font-family: 'Arial', sans-serif;
+  color: white; /* Text color for contrast */
+  background-color: orange; /* Uniform orange background */
+  padding: 4px 15px; /* Adds space around the text for uniformity */
+  text-align: center; /* Ensures text alignment is centralized */
+  border-radius: 10px; /* Smooth, rounded edges for a uniform look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds subtle shadow for depth */
+}
 /* Başlık Ayarları */
-.card h2 {
-  margin-bottom: 10px;
-  font-size: 1.5em;
+.card-content {
+  display: flex;
+  flex-direction: column; /* Ensures vertical stacking */
+  justify-content: center; /* Centers items vertically */
+  align-items: center; /* Centers items horizontally */
+  text-align: center; /* Centers text inside */
+  gap: 10px; /* Adds spacing between the lines */
 }
-
+.card button {
+  margin-top: 15px;
+  padding: 8px 15px; /* Adjust padding to make it smaller */
+  font-size: 0.9rem; /* Slightly smaller font size */
+  color: #fff;
+  background-color: #F4A525; /* Button color remains the same */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
 /* Tarayıcı Uyumluluğu için HTML ve Body Ayarları */
 html,
 body {

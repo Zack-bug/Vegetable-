@@ -20,18 +20,18 @@
     </header>
     <section class="sepet_section">
       <div class="sepet_container">
-        <h1 id="Sepetim">Sepetim</h1>
+        <h1 id="Sepetim">Cart</h1>
         <ul id="cartItems"></ul>
         <p id="Tutar">
-          <strong>Toplam Tutar:</strong> <span id="totalPrice">0</span>
+          <strong>Total:</strong> <span id="totalPrice">0</span>
           <strong> TL</strong>
         </p>
-        <button id="buyButton">Satın Al</button>
+        <button id="buyButton">Purchase</button>
         <p
           id="confirmationMessage"
           style="color: green; font-weight: bold; display: none"
         >
-          Satın alma işleminiz tamamlanmıştır!
+          Your purchase has been completed.
         </p>
       </div>
     </section>
@@ -51,7 +51,7 @@
         totalPrice = 0;
 
         if (cart.length === 0) {
-          cartItems.innerHTML = "<li>Sepetiniz boş.</li>";
+          cartItems.innerHTML = "<li>Your Cart is Empty</li>";
           totalPriceElement.textContent = 0;
           return;
         }
@@ -79,7 +79,7 @@
       // Satın alma işlemi
       function buyAll() {
         if (cart.length === 0) {
-          alert("Sepetinizde ürün bulunmamaktadır.");
+          alert("There are no products in your cart.");
           return;
         }
 
